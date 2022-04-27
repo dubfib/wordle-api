@@ -3,5 +3,5 @@
     let today = new Date().getTime() - 18000000;
     let firstDay = new Date(2021, 5, 19, 0, 0, 0, 0).getTime();
     let index = Math.floor((today - firstDay) / 864e5)
-    document.write({ "today": possibleSolutions[index + 1].replace(' ', '') });
+    document.write(JSON.stringify({ "today": possibleSolutions[index + 1].replace(' ', '') }));
 </script>
