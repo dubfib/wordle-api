@@ -1,1 +1,1 @@
-Today: (link)[https://dubfib.github.io/wordle-api/]
+Today: https://dubfib.github.io/wordle-api
