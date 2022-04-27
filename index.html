@@ -35,6 +35,6 @@ let today = new Date().getTime() - 18000000;
 let firstDay = new Date(2021, 5, 19, 0, 0, 0, 0).getTime();
 let index = Math.floor((today - firstDay) / 864e5)
 document.getElementById("td").innerHTML = possibleSolutions[index + 1];
-document.getElementById("tmr").innerHTML = possibleSolutions[index - 1];
+document.getElementById("tmr").innerHTML = possibleSolutions[index + 2];
 document.getElementById("yes").innerHTML = possibleSolutions[index];
 </script>
