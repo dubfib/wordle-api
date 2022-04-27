@@ -3,5 +3,26 @@
     let today = new Date().getTime() - 18000000;
     let firstDay = new Date(2021, 5, 19, 0, 0, 0, 0).getTime();
     let index = Math.floor((today - firstDay) / 864e5)
-    document.write(possibleSolutions[index + 1].replace(' ', ''));
+    document.getElementById("td").innerHTML = possibleSolutions[index + 1].replace(' ', '');
 </script>
+
+<html>
+<h1 id="wordle-api">Wordle API</h1>
+<details>
+  <summary>Click to reveal <b>today&#39;s</b> word!</summary>
+  <br>
+  <b id="td"> heist </b>
+</details>
+
+<details>
+  <summary>Click to reveal <b>tomorrow&#39;s</b> word!</summary>
+  <br>
+  <b id="tmr"> inert </b>
+</details>
+
+<details>
+  <summary>Click to reveal <b>yesterday&#39;s</b> word!</summary>
+  <br>
+  <b> askew </b>
+</details>
+</html>
